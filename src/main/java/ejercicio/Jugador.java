@@ -29,8 +29,7 @@ public class Jugador {
     public Jugador() {
     }
 
-    public Jugador(Integer id, String nombre, Float estatura, Float peso, Equipo idEquipo) {
-        this.id = id;
+    public Jugador(String nombre, Float estatura, Float peso, Equipo idEquipo) {
         this.nombre = nombre;
         this.estatura = estatura;
         this.peso = peso;

@@ -22,14 +22,14 @@ public class Main {
         equipoDAO.update(equipo);
         System.out.println(equipoDAO.getAll());
 
-        equipo.setId(1);
-        equipo1.setId(2);
+        equipo.setId(3);
+        equipo1.setId(4);
 
         equipoDAO.delete(equipo);
 
         JugadorDAO jugadorDAO = new JugadorDAO(em, tx);
-        Jugador jugador = new Jugador(1, "pikachu", 1.80F, 50F, equipo1);
-        Jugador jugador1 = new Jugador(2, "charizard", 2.80F, 160F, equipo1);
+        Jugador jugador = new Jugador("pikachu", 1.80F, 50F, equipo1);
+        Jugador jugador1 = new Jugador("charizard", 2.80F, 160F, equipo1);
 
         jugadorDAO.add(jugador);
         jugadorDAO.add(jugador1);
